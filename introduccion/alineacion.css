@@ -1,0 +1,40 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, 100px); /* 2 filas de 100px */
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #ff8000;
+    color: white;
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: flex-end; /* Alinear el contenido al fondo */
+    padding: 10px; /* Espacio interno */
+}
+
+.mes {
+    font-size: 24px; /* Tamaño del texto del mes */
+    flex: 1; /* Permite que el mes ocupe el espacio disponible */
+    text-align: center;/* Alinea el texto al principio */
+}
+
+.numero {
+    font-size: 18px; /* Tamaño del texto del número */
+    align-self: flex-end; /* Alineación a la derecha */
+}
